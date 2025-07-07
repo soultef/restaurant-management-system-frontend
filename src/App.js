@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import NavBar from './NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <div><h1>This is the space holder</h1></div>
-    </div>
+   
+
+      <NavBar/>
+  
   );
 }
 
