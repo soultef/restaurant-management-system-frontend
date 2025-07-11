@@ -78,6 +78,7 @@
   font-weight: bold;
   text-decoration: none;
   transition: background 0.3s ease;
+  white-space: nowrap;
 }
 
 .order-link a:hover {
@@ -86,21 +87,25 @@
 }
 
 /* Responsive: Mobile View */
-@media (max-width: 768px) {
-  /* Hide main links and show hamburger */
+@media (max-width: 900px) {
+  
   .menu-nav-link {
-    gap: 10px;
+    display: flex;
+    width: 50%;
+    padding-right:4rem;
+    
   }
 
-  .menu-nav-link li:not(:first-child) {
+  .menu-nav-link li:nth-child(n+3) {
     display: none;
   }
 
   .menu-nav-link li:first-child {
     display: block; 
+    margin-right: auto;
+    
   }
 
-  
   .menu-side-bar {
     display: flex;
     flex-direction: column;
@@ -141,5 +146,8 @@
   
   .cart-nav-link {
     gap: 15px;
+    width: 50%;
+    display: flex;
+    justify-content: end;
   }
 }
