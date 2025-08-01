@@ -30,7 +30,6 @@ function NavBar() {
         <li onClick={toggleSidebar}>
           <FaTimes />
         </li>
-        <li><a href="#">Logo</a></li>
         <li><a href="#">MENUE</a></li>
         <li><a href="#">SPECIALS</a></li>
         <li><a href="#">RESERVE</a></li>

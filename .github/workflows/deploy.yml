@@ -1,0 +1,27 @@
+name: build restaurant management app
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  react-ci:
+    runs-on: ubuntu-latest
+
+    container:
+      image: node:18  
+
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run build
+        run: npm run build
+
+      - name: Run tests
+        run: npm test -- --watchAll=false
