@@ -1,4 +1,4 @@
-import './CSS/imageslider.css';
+import '../CSS/home.css';
 function Home()
 {
     return(
