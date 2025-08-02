@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaSearch, FaBars, FaTimes } from 'react-icons/fa';
 import { FaUser, FaCartShopping } from 'react-icons/fa6';
-import './CSS/NavBar.css';
+import '../CSS/NavBar.css';
 
 function NavBar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -30,7 +30,6 @@ function NavBar() {
         <li onClick={toggleSidebar}>
           <FaTimes />
         </li>
-        <li><a href="#">Logo</a></li>
         <li><a href="#">MENUE</a></li>
         <li><a href="#">SPECIALS</a></li>
         <li><a href="#">RESERVE</a></li>
