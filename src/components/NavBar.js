@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaSearch, FaBars, FaTimes } from 'react-icons/fa';
 import { FaUser, FaCartShopping } from 'react-icons/fa6';
 import '../CSS/NavBar.css';
+import { NavLink } from 'react-router-dom';
 
 function NavBar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -17,12 +18,14 @@ function NavBar() {
         <li onClick={toggleSidebar}>
           <FaBars />
         </li>
-        <li><a href="#">Logo</a></li>
-        <li><a href="#">MENUE</a></li>
-        <li><a href="#">SPECIALS</a></li>
-        <li><a href="#">RESERVE</a></li>
-        <li><a href="#">JOBS</a></li>
-        <li><a href="#">LOCATION</a></li>
+        <li><NavLink to="/">LOGO</NavLink></li>
+        <li><NavLink to="/menue">MENUE</NavLink></li>
+        <li><NavLink to="/specials">SPECIALS</NavLink></li>
+        <li><NavLink to="/reserve">RESERVE</NavLink></li>
+        <li><NavLink to="/jobs">JOBS</NavLink></li>
+        <li><NavLink to="/location">LOCATION</NavLink></li>
+        
+  
       </ul>
 
       
