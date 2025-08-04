@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaSearch, FaBars, FaTimes } from 'react-icons/fa';
 import { FaUser, FaCartShopping } from 'react-icons/fa6';
 import '../CSS/NavBar.css';
+import { NavLink } from 'react-router-dom';
 
 function NavBar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -17,12 +18,14 @@ function NavBar() {
         <li onClick={toggleSidebar}>
           <FaBars />
         </li>
-        <li><a href="#">Logo</a></li>
-        <li><a href="#">MENUE</a></li>
-        <li><a href="#">SPECIALS</a></li>
-        <li><a href="#">RESERVE</a></li>
-        <li><a href="#">JOBS</a></li>
-        <li><a href="#">LOCATION</a></li>
+        <li><NavLink to="/">LOGO</NavLink></li>
+        <li><NavLink to="/menue">MENUE</NavLink></li>
+        <li><NavLink to="/specials">SPECIALS</NavLink></li>
+        <li><NavLink to="/reserve">RESERVE</NavLink></li>
+        <li><NavLink to="/jobs">JOBS</NavLink></li>
+        <li><NavLink to="/location">LOCATION</NavLink></li>
+        
+  
       </ul>
 
       
@@ -30,19 +33,20 @@ function NavBar() {
         <li onClick={toggleSidebar}>
           <FaTimes />
         </li>
-        <li><a href="#">MENUE</a></li>
-        <li><a href="#">SPECIALS</a></li>
-        <li><a href="#">RESERVE</a></li>
-        <li><a href="#">JOBS</a></li>
-        <li><a href="#">LOCATION</a></li>
+         <li><NavLink to="/">LOGO</NavLink></li>
+        <li><NavLink to="/menue">MENUE</NavLink></li>
+        <li><NavLink to="/specials">SPECIALS</NavLink></li>
+        <li><NavLink to="/reserve">RESERVE</NavLink></li>
+        <li><NavLink to="/jobs">JOBS</NavLink></li>
+        <li><NavLink to="/location">LOCATION</NavLink></li>
       </ul>
 
       
       <ul className="cart-nav-link">
-        <li><a href="#"><FaSearch /></a></li>
-        <li><a href="#"><FaCartShopping /></a></li>
-        <li><a href="#"><FaUser /></a></li>
-        <li className="order-link"><a href="#">ORDER NOW</a></li>
+        <li><NavLink to="/cart"><FaSearch /></NavLink></li>
+        <li><NavLink to="/cart"><FaCartShopping/></NavLink></li>
+        <li><NavLink to="/login"><FaUser/></NavLink></li>
+        <li className="order-link"><NavLink to="/menue">ORDER NOW</NavLink></li>
       </ul>
     </nav>
   );
