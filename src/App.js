@@ -8,6 +8,8 @@ import Menue from './components/Menue';
 import Specials from './components/Specials'; 
 import Location from './components/Location';
 import Jobs from './components/Jobs';
+import Login from './components/Login';
+import Cart from './components/Cart'
 
 
 
@@ -24,6 +26,8 @@ function App() {
           <Route path="/reserve" element={<Reserve />} />
           <Route path="/jobs" element={<Jobs />} />
           <Route path="/location" element={<Location />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/cart" element={<Cart />} />
 
         </Routes>
        </BrowserRouter>
